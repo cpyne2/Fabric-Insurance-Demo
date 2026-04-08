@@ -2,6 +2,9 @@
 ![agent](https://github.com/user-attachments/assets/aea60bd1-282c-48e1-b32a-1af2b8d048aa)
 # Fabric-Insurance-Demo
 This solution builds a demo environment showing how Fabric Data Agents can reason over a simulated insurance dataset
+![russo](https://github.com/user-attachments/assets/bac69374-3015-419a-8a34-f3ede93dc874)
+
+![coverage question](https://github.com/user-attachments/assets/c1abce11-c24b-4861-83c5-708559c86f83)
 
 ![Question1](https://github.com/user-attachments/assets/5daa08fc-76f0-4105-ac4d-ab905203765a)
 
