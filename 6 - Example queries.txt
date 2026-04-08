@@ -1,0 +1,55 @@
+Show me all adjuster notes for claim 1031
+
+SELECT NoteID, ClaimID, AdjusterName, NoteDate, NoteCategory, NoteText
+FROM claimsadjusternotes
+WHERE ClaimID = 1031
+ORDER BY NoteDate ASC
+
+-------------------------
+
+Which claims have been escalated?
+
+SELECT DISTINCT ClaimID, AdjusterName, NoteDate, NoteText
+FROM claimsadjusternotes
+WHERE NoteCategory = 'Escalation'
+ORDER BY NoteDate DESC
+
+------------------------
+
+Show me all notes that mention the word dispute
+
+SELECT ClaimID, AdjusterName, NoteDate, NoteCategory, NoteText
+FROM claimsadjusternotes
+WHERE NoteText LIKE '%dispute%'
+ORDER BY NoteDate DESC
+
+----------------------------
+
+Which claims are waiting on documentation?
+
+SELECT ClaimID, AdjusterName, NoteDate, NoteText
+FROM claimsadjusternotes
+WHERE NoteCategory = 'Documentation Request'
+ORDER BY NoteDate ASC
+
+--------------------------------
+
+Show me all notes written by Sandra Liu
+
+SELECT ClaimID, NoteDate, NoteCategory, NoteText
+FROM claimsadjusternotes
+WHERE AdjusterName = 'Sandra Liu'
+ORDER BY ClaimID, NoteDate ASC
+
+---------------------------------------
+
+Which claims have had the most adjuster activity?
+
+SELECT ClaimID, COUNT(*) AS NoteCount
+FROM claimsadjusternotes
+GROUP BY ClaimID
+ORDER BY NoteCount DESC
+
+-------------------------------------------
+
+
