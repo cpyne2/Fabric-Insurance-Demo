@@ -51,3 +51,36 @@ Demo environment of Fabric Data Agents over a simulated insurance dataset
 6. Click on Setup > ClaimsLake > Data Souce Instuctions.  Paste in "5 - Data Souce Instuctions.txt" being sure to clear any starter instructions before pasting.
 7. Click on Example Queries > Add Example.  Open "6 - Example queries.txt" and past in each example question and SQL example. Click Add after each query is entered so each one can go in a new box.  Ensure all queries succcessfully validate.
 Click Publish and enter the Data Agent Purpose and Capabilities from "7 - Agent Purpose.txt"
+
+# Ask the Data Agent some questions
+
+Claims Data Agent — Demo Question Script
+
+🟢 Level 1 — Semantic Model Basics
+Simple headline numbers to prove the agent understands the data.
+	1. "How many insurance claims do we have on record?"
+	2. "What is the total amount claimed across all policies?"
+	3. "How many claims are currently approved, denied, or still under review?"
+	4. "What is our most common claim type?"
+	5. "Break down the total number of claims by policy type."
+
+🟡 Level 2 — Semantic Model Intermediate
+Business-relevant questions that start to tell a story.
+	6. "What is our current claim approval rate?"
+	7. "How much money has been approved versus how much was originally claimed?"
+	8. "Which state has the highest number of claims?"
+	9. "Who is our most active claims adjuster and how many claims have they handled?"
+	10. "How many claims are still pending and what is the total dollar amount at risk from those open claims?"
+
+🔴 Level 3 — Semantic Model Advanced
+More advanced business questions. These questions surface core business problems.
+	11. "How many claims were filed outside the policy coverage window?"
+	12. "What is the total dollar exposure from claims that were filed outside the policy window?"
+	13. "What percentage of our total claims volume were filed outside the policy coverage window?"
+	14. "How much money did we save by denying invalid claims rather than paying them out?"
+	15. "Which active policies are expiring in the next 90 days and do any of them have claims that are still open?"
+
+🔵 Level 4 — Cross Source: Semantic Model + Lakehouse
+Complex questions too complex to be answerrd in a PowerBI Report. These pull structured claim data from the semantic model and narrative investigation history from the Lakehouse adjuster notes table.
+	16. "Show me every claim that was filed outside the policy coverage window, including the customer name, how many days out of window it was filed, the claim amount, and all adjuster notes on record for each of those claims."
+	17. "Find any claims that are currently in review or submitted status, then pull the most recent adjuster note for each one so we can see where the investigation stands."
