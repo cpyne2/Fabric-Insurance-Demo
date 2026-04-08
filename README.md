@@ -1,6 +1,10 @@
 
+![agent](https://github.com/user-attachments/assets/aea60bd1-282c-48e1-b32a-1af2b8d048aa)
 # Fabric-Insurance-Demo
-This solution builds a demo environment showing Fabric Data Agents over a simulated insurance dataset
+This solution builds a demo environment showing how Fabric Data Agents can reason over a simulated insurance dataset
+
+![Question1](https://github.com/user-attachments/assets/5daa08fc-76f0-4105-ac4d-ab905203765a)
+
 
 # Requrements
 1. A Fabric enabled workspace
@@ -57,6 +61,8 @@ This solution builds a demo environment showing Fabric Data Agents over a simula
 6. Click on Setup > ClaimsLake > Data Souce Instuctions.  Paste in contents of **5 - Data Souce Instuctions.txt** being sure to clear any starter instructions before pasting.
 7. Click on Example Queries > Add Example.  Open **6 - Example queries.txt** and past in each example question and SQL example. Click Add after each query is entered so each one can go in a new box.  Ensure all queries succcessfully validate.
 Click Publish and enter the Data Agent Purpose and Capabilities from **7 - Agent Purpose.txt**
+
+![flow](https://github.com/user-attachments/assets/af659342-c1dd-4eb9-8791-a92609394c4e)
 
 # Ask the Data Agent some questions
 **Claims Data Agent — Demo Question Script**
