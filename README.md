@@ -62,6 +62,7 @@ Click Publish and enter the Data Agent Purpose and Capabilities from **7 - Agent
 
 🟢 Level 1 — Semantic Model Basics
 Simple headline numbers to prove the agent understands the data.
+
 	1. "How many insurance claims do we have on record?"
 	2. "What is the total amount claimed across all policies?"
 	3. "How many claims are currently approved, denied, or still under review?"
@@ -70,6 +71,7 @@ Simple headline numbers to prove the agent understands the data.
 
 🟡 Level 2 — Semantic Model Intermediate
 Business-relevant questions that start to tell a story.
+
 	6. "What is our current claim approval rate?"
 	7. "How much money has been approved versus how much was originally claimed?"
 	8. "Which state has the highest number of claims?"
@@ -78,6 +80,7 @@ Business-relevant questions that start to tell a story.
 
 🔴 Level 3 — Semantic Model Advanced
 More advanced business questions. These questions surface core business problems.
+
 	11. "How many claims were filed outside the policy coverage window?"
 	12. "What is the total dollar exposure from claims that were filed outside the policy window?"
 	13. "What percentage of our total claims volume were filed outside the policy coverage window?"
@@ -86,5 +89,6 @@ More advanced business questions. These questions surface core business problems
 
 🔵 Level 4 — Cross Source: Semantic Model + Lakehouse
 Complex questions too complex to be answerrd in a PowerBI Report. These pull structured claim data from the semantic model and narrative investigation history from the Lakehouse adjuster notes table.
+
 	16. "Show me every claim that was filed outside the policy coverage window, including the customer name, how many days out of window it was filed, the claim amount, and all adjuster notes on record for each of those claims."
 	17. "Find any claims that are currently in review or submitted status, then pull the most recent adjuster note for each one so we can see where the investigation stands."
