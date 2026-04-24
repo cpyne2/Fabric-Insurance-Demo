@@ -1,0 +1,9 @@
+# Key fields:
+- ClaimID: links claimsadjusternotes table to the Claims table in the semantic model. 
+Always use ClaimID to join from Claims in the semantic model to claimsadjusternotes in this lakehouse.
+- NoteCategory: the stage of investigation. Values are:
+- "Initial Review" — first assessment after claim is filed
+- "Follow Up" — subsequent contact or status update
+- "Escalation" — claim has been escalated to a senior adjuster or legal team. This is a high-priority signal.
+- "Documentation Request" — adjuster is waiting on paperwork 
+from the customer 
