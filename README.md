@@ -56,12 +56,13 @@ This solution builds a demo environment showing how Fabric Data Agents can reaso
    
 # Data Agent Setup and Prep
 **Create a Data Agent that can reason over this data.  Questions will primarily go against the semantic model, but can push down to the lakehouse to look at adjuster notes when needed.  The agent will be trained with Agent Instuctions, Data Source Instuctions, and Example SQL queries**
+** Note - these files are in markdown (md) format, not just txt **
 1. Worspace > New Item > Data Agent
 2. Name the agent **Claims Agent**
 3. Click Add Data > Datasouce.  Select the **ClaimsModel** and then repeat to add the **ClaimsLake**.
 4. Expand the sematic model and the lakehouse and check off all 4 tables
-5. Click Agent Instuctions and past in the contents of **4 - Agent Instuctions.txt**.  Be sure to delete starter instructions first.
-6. Click on Setup > ClaimsLake > Data Souce Instuctions.  Paste in contents of **5 - Data Souce Instuctions.txt** being sure to clear any starter instructions before pasting.
+5. Click Agent Instuctions and past in the contents of **4 - Agent Instuctions.md**.  Be sure to delete starter instructions first.
+6. Click on Setup > ClaimsLake > Data Souce Instuctions and Data Description.  Paste in contents of **5a - Data Souce Instuctions.md** and **5b - Data Description.md** being sure to clear any starter instructions before pasting.
 7. Click on Example Queries > Add Example.  Open **6 - Example queries.txt** and past in each example question and SQL example. Click Add after each query is entered so each one can go in a new box.  Ensure all queries succcessfully validate.
 Click Publish and enter the Data Agent Purpose and Capabilities from **7 - Agent Purpose.txt**
 
